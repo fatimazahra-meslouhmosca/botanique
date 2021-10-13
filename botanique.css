@@ -1,0 +1,576 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(137, 155, 137);
+    
+}
+
+/* ----------------------------------------------- HEADER ------------------------------------------- */
+.aligne{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    width: 400px;;
+}
+
+.espace{
+padding: 15px;
+text-align: center;
+}
+
+.section1{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(205, 206, 141);
+ }
+
+
+header a img{
+    width: 100px;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+.sous{
+    display: none;
+    box-shadow: 0px 1px 2px rgb(44, 32, 32);
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+
+.sous a{
+    padding: 10px;
+    border-bottom: none;
+}
+
+.sous a:hover{
+    border-bottom: none;
+    background-color: RGBa(200,200,200,0.1);
+}
+
+
+.deroulant > a::after{
+    content:" ▼";
+    font-size: 12px;
+}
+
+nav a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0px;
+}
+
+nav a:hover{
+    color: orange;
+    border-bottom: 2px solid gold;
+}
+
+.sous li{
+    float: none;
+    width: 100%;
+    text-align: left;
+}
+
+nav ul li{
+  
+    text-align: center;
+    position: relative;
+}
+
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav > ul li:hover .sous{
+    display: block;
+}
+
+/*-----------------------------------------Accueil--------------------------------------*/
+
+/* ------------------- Main ------------------- */
+
+/* ------- carroussel ------- */
+div#slider {
+     width:100%;
+      overflow: hidden;
+      height: 800px;
+     } 
+
+ div#slider figure {
+        position: relative; 
+        width: 500%;
+        margin: 0;
+        padding: 0;
+        font-size: 0;
+        animation: 10s slidy infinite;
+      }
+
+      div#slider figure img { 
+          width: 20%; 
+          height: 800px; 
+          
+        }
+
+        @keyframes slidy {
+            0% { left: 0%; }
+            20% { left: 0%; }
+            25% { left: -100%; }
+            45% { left: -100%; }
+            50% { left: -200%; }
+            70% { left: -200%; }
+            75% { left: -300%; }
+            95% { left: -300%; }
+            100% { left: -400%; }
+          }
+
+         
+
+          .color{
+              display: flex;
+              flex-direction: column;
+              width: 100%;
+
+          }
+
+          .section2-1{
+              display: flex;
+              justify-content: space-evenly;
+              padding: 45px;
+          }
+          .taille{
+              width: 400px;
+              height: 300px;
+              border-radius: 15px;
+          }
+          .effet{
+            text-align: center;
+            width: 480px;
+            height: 355px;
+            border-radius: 25px;
+            color: darkolivegreen;
+            padding: 35px;
+            transition: width 1s, height 1s, background-color 1s, transform 1s;
+        }
+        .effet:hover{
+            transform: scale(1.2);
+        }
+        .contour{
+            text-shadow: 1px 1px 1px black;
+        }
+        
+
+/* ------------------------------------ PRESENTATION --------------------------------------- */
+
+.plantefleur {
+    display: flex;
+justify-content: space-evenly;
+margin: 20px;
+}
+
+
+.Plantes{
+height: 400px;
+width: 300px;
+background-color: seashell;
+text-align: center;
+border-radius: 100px;
+box-shadow: seashell;
+font-family: 'Courier New', Courier, monospace;
+}
+
+.Fleurs{
+    height: auto;
+    width: auto;
+    text-align: center; 
+}
+
+#arbusteleg {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.Arbustes {
+    height: auto;
+    width: auto;
+    text-align: center;
+}
+
+.Légumes {
+    height: auto;
+    width: auto;
+    text-align: center;
+}
+.bienvenu { 
+    font-family: 'Ephesis', cursive;
+text-align: center;
+font-size: 38px;
+}
+.p{
+    display: flex;
+    margin: auto;
+    width: 80%;
+    text-align: justify;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+}
+
+/* ---------------------------------- PAGE PLANTES ------------------------------------- */
+
+.présentationplantes {
+    text-align: center ;
+    text-decoration: ivory;
+    font-size: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+.image img {
+    border-radius: 30%;
+}
+
+.effet5{
+    text-align: center;
+    color: darkolivegreen;
+    font-size: 25px;
+    width: 80%;
+    margin: auto;
+    background-color:seashell;
+    border-radius: 0px 0px 35px 35px ;
+  box-shadow: 0 0 2em rgb(14, 13, 13);
+}
+/* ------------------------------------ Arbuste --------------------------------------- */
+.arbuste1{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.titre{
+color: darkolivegreen;
+font-size: 100px;
+}
+.titre2{
+    color: darkolivegreen;
+    font-size: 80px;
+    }
+
+.taille1{
+    width: 449px;
+    height: 380px;
+    border-radius: 15px;
+}
+.effet1{
+    text-align: center;
+    width: 450px;
+    height: 510px;
+    color: darkolivegreen;
+    box-shadow: -1em 0 .4em black;
+    border-radius: 15px;
+    background-color: lavender;
+}
+.entete{
+ 
+    text-align: center;
+    padding: 25px;
+}
+.effet2{
+    
+    width: 900px;
+   margin: auto;
+   border-radius: 50px;
+   font-size: 25px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   color: darkolivegreen;
+   background-color: lavender;
+}
+.effet3{
+    text-align: center;
+    width: 300px;
+    height: 580px;
+   margin: auto;
+   border-radius: 15px;
+   font-size: 15px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   color: darkolivegreen;
+   background-color: lavender;
+   transition: width 1s, height 1s, background-color 1s, transform 1s;
+}
+.effet3:hover{
+    transform: scale(1.2);
+}
+.taille3{
+    width: 290px;
+    height: 290px;
+    border-radius: 15px;
+}
+.arbuste3{
+    display: flex;
+    padding: 60px;
+}
+
+/* ----------------------------------------- Legume ---------------------------------------- */
+
+.taille4{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    transition: width 1s, height 1s, background-color 1s, transform 1s;
+}
+
+.taille4:hover{
+    transform: scale(1.2);
+}
+
+
+table {
+    width: 80%;
+    font-size:25px;
+    margin: 2rem auto;
+}
+caption {
+    font-size: 2rem;
+    font-weight: bold;
+    padding-bottom: 2rem;
+    color: darkolivegreen;
+}
+
+thead th {
+    background-color: darkslategrey;
+    text-shadow: 1px 1px 1px black;
+    color: white;
+    height: 45px;
+}
+
+th, td {
+    padding: 0.5rem;
+    text-align: center;
+    border-radius: 4px;
+}
+
+tbody tr:nth-child(odd) {
+    background-color:darkolivegreen;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: darkslategrey;
+  }
+
+.effet4{
+    text-align: center;
+    color: darkolivegreen;
+    font-size: 40px;
+    width: 80%;
+    margin: auto;
+}
+.xhan-phil-alo {
+    display: flex ;
+    justify-content: space-around;
+}
+.xhan {height: 400px;
+    width: 250px;
+    background-color: seashell;
+    text-align: center;
+    border-radius: 100px;
+    box-shadow: seashell;
+    margin: 20px;
+
+}
+
+.mar-mons-cal {
+    display: flex ;
+    justify-content: space-around;  
+}
+
+
+.fic-pep-str {
+    display: flex ;
+    justify-content: space-around; 
+}
+/* ----------------------------------------- FLEURS ---------------------------------------- */
+main {
+    background-color: wheat;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+.Rose {
+    display: flex;
+    margin: auto;
+flex-direction: column;
+}
+.Tulipe-Marguerite {
+    display: flex;
+    justify-content: space-around;
+    background-color: wheat;
+}
+ .si {
+   
+    text-align: center;
+    box-shadow: burlywood;
+ }
+
+ .Physalis-Saguaro-Orchidée {
+     display: flex;
+     justify-content: space-between;
+ }
+.Toutes-les-fleurs {
+    padding: 20px;
+    background-color: cornsilk;
+}
+.imgg img {
+    border-radius: 100%;
+
+}
+ 
+
+.paragrapheprésentation{
+ 
+    text-align: center;
+    padding: 25px;
+    background-color: wheat;
+}
+.amel{
+    
+    width: 600px;
+   margin: auto;
+   border-radius: 50px;
+   font-size: 25px;
+   color: black;
+   background-color:cornsilk;
+}
+
+.explic {
+    width: 60%;
+    margin: auto;
+    text-align: justify;
+    padding: 8px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* --------------------------------------- Contact--------------------------------------- */
+form{
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+}
+fieldset{
+    height: 660px;
+    border-radius: 45px;
+    padding: 55px;
+    background-color:darkolivegreen ;
+    color:rgb(205, 206, 141); 
+}
+legend{
+    font-size: 50px;
+    text-shadow:2px 2px 2px black;
+}
+.secform{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+.formelmt{
+    width: 300px;
+    height: 30px;
+    border-radius: 10px;
+}
+.agef{
+    border-radius: 10px;
+    height: 30px;
+}
+
+.ztexte{
+    display: flex;
+    justify-content: center;
+}
+textarea{
+    height: 300px;
+    width: 600px;
+   border-radius: 10px;
+   font-size: 20px;
+   font-family: 'Times New Roman', Times, serif;
+}
+.valide{
+    padding: 15px;
+}
+.val{
+   width: 500px;
+   height: 30px;
+   border-radius: 10px;
+   background-color: rgb(155, 155, 155);
+   cursor: pointer;
+   text-shadow:2px 2px 2px black;
+   font-size: 20px;
+   color:rgb(205, 206, 141);
+   transition: width 1s, height 1s, background-color 1s, transform 1s;
+   font-family: fantasy;
+}
+
+.val:hover{
+    transform: scale(1.2);
+    color: darkolivegreen;
+    background-color: whitesmoke;
+}
+
+.check{
+    text-align: center; 
+}
+
+.curseur{
+    cursor: pointer;
+}
+
+/* -------------------------------------------- FOOTER ------------------------------------------------- */
+
+.section3{
+background-color: darkolivegreen;
+padding: 25px;
+}
+
+.section3-1{
+    display: flex;
+    justify-content: space-around;
+}
+
+.felmt{
+    text-align: center;
+    width: 350px;
+}
+.felmt1{
+    text-align: center;
+}
+
+.footerc{
+    display: flex;
+    padding: 15px;
+   justify-content: space-between;
+   font-size: 20px;
+}
+
+.taille5{
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+}
+button{
+    background-color: rgb(205, 206, 141);
+    width: 250px;
+    height: 30px;
+    border-radius: 25px;
+    box-shadow: -1em 0 .4em black;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}

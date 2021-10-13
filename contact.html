@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="botanique.css">
+</head>
+
+<body>
+    <!--  **************************header*************************** -->
+    <header class="section1">
+
+        <div>
+            <a href="accueil.html" title="Retour à l'accueil"><img src="images/Logo.jpg" alt="logo" /></a>
+        </div>
+        <div>
+            <nav>
+                <ul class="aligne">
+                    <div>
+                        <li><a href="presentation.html">Qui sommes-nous?</a></li>
+                    </div>
+                    <div>
+                        <li class="deroulant"><a href="#">Nos plantes &ensp;</a>
+                            <ul class="sous">
+                                <li><a href="plantes.html">Plantes</a></li>
+                                <li><a href="fleurs.html">Fleurs</a></li>
+                                <li><a href="arbustes.html">Arbustes</a></li>
+                                <li><a href="legumes.html">Légumes</a></li>
+                            </ul>
+                        </li>
+                    </div>
+
+                    <div>
+                        <li><a href="contact.html">Contact</a></li>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <!--  **************************Main*************************** -->
+
+    <main>
+
+        <form>
+            <fieldset>
+                <legend>Nous écrire</legend>
+
+                <section class="secform">
+                    <div>
+                        <label for="nom"></label>
+                        <input class="formelmt" placeholder="Nom de famille" type="text" id="nom" name="nom"
+                            minlength="2" maxlength="25" required>
+                    </div>
+                    <div class="formelmt">
+                        <label for="prenom"></label>
+                        <input class="formelmt" placeholder="Prénom" type="text" id="prenom" name="prenom" minlength="2"
+                            maxlength="25" required>
+                    </div>
+                    <div class="formelmt">
+                        <label for="mail"></label>
+                        <input class="formelmt"  placeholder="Adresse mail" type="email" id="mail" name="mail"
+                            required>
+                    </div>
+                </section>
+
+                <section class="secform">
+                    <div>
+                        <label for="age"></label>
+                        <input class="agef" placeholder="Age" type="number" id="age" name="age" min="16" max="99">
+                    </div>
+                    <div>
+                        <input type="radio" id="h" name="sexe" value="homme">
+                        <label for="h">Homme</label>
+                        <input type="radio" id="f" name="sexe" value="femme">
+                        <label for="f">Femme</label>
+                    </div>
+                </section>
+
+                <div class="ztexte">
+                    <textarea name="exp" placeholder="Ecrire ici" maxlength="500"></textarea>
+                </div>
+
+                <div class="valide check">
+                    <input class="curseur" type="checkbox" id="suivre"  >
+                    <label for="suivre">Sabonner à la newsletter</label>
+                </div>
+
+                <div class="ztexte valide">
+                    <input class="val" type="submit" value="Envoyer">
+                </div>
+
+            </fieldset>
+
+        </form>
+
+    </main>
+
+    <!--  **************************footer*************************** -->
+
+    <footer class="section3">
+
+        <div class="section3-1">
+            <div class="felmt">
+                <h1> Qui sommes-nous ?</h1>
+                <nav class="footerplante">
+                    <a href="presentation.html">Présentation</a>
+                </nav>
+            </div>
+
+            <div class="felmt1">
+                <h1>Nos Plantes</h1>
+                <div>
+                    <nav class="footerplante">
+                        <a href="plantes.html">Plantes</a>
+                        <a href="fleurs.html">Fleurs</a>
+                        <a href="arbustes.html">Arbustes</a>
+                        <a href="legumes.html">Légumes</a>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="felmt">
+                <h1>contact</h1>
+                <div class="footerc">
+                    <div>
+                        <p>Suivez-nous:</p>
+                    </div>
+                    <div><a href="#"><img class="taille5" src="images/facebook.png" alt=""></a></div>
+                    <div><a href="#"><img class="taille5" src="images/twitter.png" alt=""></a></div>
+                    <div><a href="#"><img class="taille5" src="images/insta.jfif" alt=""></a></div>
+                    <div><a href="#"><img class="taille5" src="images/youtube.png" alt=""></a></div>
+                </div>
+
+                <a href="#"> <button><i>je m'abonne à la newsletter</i></button> </a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
